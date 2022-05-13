@@ -7,7 +7,7 @@ let apiKey = "91a4e1a69c63045deabf2609a06ae5dc";
 
 $form.addEventListener("submit", e => {
     e.preventDefault();
-    let valorInput = $input.value;
+    let valorInput = $input.value.trim();
 
     let itens = $list.querySelectorAll(".ajax-section .city");
     let itensArray = Array.from(itens);
