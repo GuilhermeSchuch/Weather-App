@@ -12,10 +12,12 @@ a {
 
 button {
     cursor: pointer;
+    color: #fff;
 }
 
 input {
     appearance: none;
+    color: #fff;
 }
 
 button,
@@ -23,7 +25,10 @@ input {
     border: none;
     background: none;
     outline: none;
-    color: black;
+}
+
+input::placeholder{
+    color: #fff;
 }
 
 img {
@@ -53,6 +58,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    color: black;
 }
 
 .first-section {
@@ -64,6 +70,7 @@ body {
     font-size: 4rem;
     letter-spacing: 0.02em;
     padding: 0 0 30px 0;
+    color: #fff;
 }
 
 .first-section form {
@@ -79,9 +86,6 @@ body {
     border-bottom: 1px solid;
 }
 
-.first-section form input::placeholder {
-     color: black;
-}
 
 .first-section form button {
     font-size: 1rem;
@@ -90,7 +94,7 @@ body {
     padding: 15px 20px;
     margin-left: 15px;
     border-radius: 5px;
-    background-color: rgba(94, 91, 91, 0.712);
+    background-color: rgba(0, 0, 0, 0.712);
     transition: background 0.3s ease-in-out;
 }
 
