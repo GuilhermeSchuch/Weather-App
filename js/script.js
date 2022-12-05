@@ -34,11 +34,12 @@ $form.addEventListener("submit", e => {
       });
 
       if (ArrayFiltrada.length > 0) {
-        $msg.textContent = `Já foi feita a pesquisa de ${
+        $msg.textContent = `Search for "${
 			ArrayFiltrada[0].querySelector(".city-name span").textContent
-        }`;
+        }" alredy been made`;
         $form.reset();
         $input.focus();
+        $msg.style.padding = ".5em";
         return;
       }
     }
@@ -73,10 +74,13 @@ $form.addEventListener("submit", e => {
         $list.appendChild($li);
       })
       .catch(() => {
-        $msg.textContent = "Insira uma cidade válida";
+        $msg.textContent = "Please, type a valid city";
+        console.log($msg);
+        $msg.style.padding = ".5em";
       });
 
     $msg.textContent = "";
     $form.reset();
     $input.focus();
+    $msg.style.padding = "0";
 });
