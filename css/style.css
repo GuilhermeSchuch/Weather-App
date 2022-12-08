@@ -260,3 +260,9 @@ body {
         min-height: 100vh;
     }
 }
+
+@media screen and (min-height: 1000px){
+    #space{
+        margin-bottom: 100vh;
+    }
+}
